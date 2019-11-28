@@ -29,7 +29,7 @@ public class Student{
         return username;
     }
 
-    private String getName() {
+    String getName() {
         return name;
     }
 

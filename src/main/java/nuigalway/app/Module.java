@@ -21,6 +21,18 @@ public class Module {
     }
 
     public void addCourse(Course c){courses.add(c);}
+
+    String printCourses(){
+        if (courses != null){
+            for(Course c :courses){
+                return c.getName();
+                //System.out.println(m.getName());
+            }
+        }else{
+            System.out.println("empty");
+        }
+        return "";
+    }
 }
 
 

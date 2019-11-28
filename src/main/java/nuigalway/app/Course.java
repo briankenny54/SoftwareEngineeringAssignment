@@ -14,7 +14,7 @@ public class Course {
         this.students = students;
     }
 
-    private String getName(){
+    public String getName(){
         return name;
     }
 
@@ -24,5 +24,17 @@ public class Course {
 
     void addModule(Module m){
         modules.add(m);
+    }
+
+    String printStudents(){
+        if (students != null){
+            for(Student s :students){
+                return s.getName();
+                //System.out.println(m.getName());
+            }
+        }else{
+            System.out.println("empty");
+        }
+        return "";
     }
 }
